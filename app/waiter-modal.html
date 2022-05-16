@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Waiter</title>
+	<meta name="description" content="#">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="#">
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+	<script src="js/app.min.js" defer></script>
+
+</head>
+
+<body>
+
+	<header class="header">
+		
+		<div class="header__container container">
+			<button class="hamburger" type="button">
+				<span class="hamburger__item"><img src="img/preson.svg" alt=""></span>
+			</button>
+			<div class="header__wrapper">
+				<div class="header__nav">
+					<div class="header__profile">
+						<div class="header__img">
+							<img src="img/porfile.png" alt="">
+						</div>
+						<div class="header__name">
+							Дастан<br><span>ID:4125</span>
+						</div>
+					</div>
+					<div class="header__switch">
+						<div class="header__switch_text">Работаю</div>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div class="header__list">
+						<a href="table.html" class="header__list_item">
+							<p>Столы</p>
+							<span></span>
+						</a>
+						<a href="orders.html" class="header__list_item">
+							<p>Заказы</p>
+							<span></span>
+						</a>
+						<a href="#" class="header__list_item modal__finish">
+							<p>Выход</p>
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="waiter">
+		<div class="container">
+			<p class="waiter__title">Заказы</p>
+			<div class="waiter__list">
+				<div class="waiter__table">
+					<input id="waiter-1" type="radio" name="radio" value="1">
+					<label for="waiter-1">
+						<div>
+							<p>1</p>
+							<img src="img/table.svg" alt="">
+						</div>
+					</label>
+				</div>
+	
+				<div class="waiter__table">
+					<input id="waiter-2" type="radio" name="radio" value="1">
+					<label for="waiter-2">
+
+						<div>
+							<p>2</p>
+							<img src="img/table.svg" alt="">
+						</div>
+					</label>
+				</div>
+	
+				<div class="waiter__table">
+					<input id="waiter-3" type="radio" name="radio" value="1">
+					<label for="waiter-3" class="waiter--call">
+						<div>
+							<p>3</p>
+							<img src="img/table.svg" alt="">
+						</div>
+						<div>
+							<img src="img/hello.svg" alt="">
+						</div>
+						<span></span>
+					</label>
+				</div>
+	
+				<div class="waiter__table">
+					<input id="waiter-4" type="radio" name="radio" value="1" checked>
+					<label for="waiter-4">
+
+						<div>
+							<p>4</p>
+							<img src="img/table.svg" alt="">
+						</div>
+						<div>
+							<img src="img/paper.svg" alt="">
+						</div>
+					</label>
+				</div>
+	
+			</div>
+	
+			<button class="btn btn--table">Добавить заказ</button>
+
+		</div>
+	</section>
+
+	<section class="table">
+		<div class="table__container container">
+			<div class="table__item">
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name">Имя: <span>Дастан</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">4</p>
+						<div class="table__img">
+							<img src="img/table.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<div class="table__img">
+							<img src="img/eye.svg" alt="">
+						</div>
+						<span class="table__elipse"></span>
+						<p class="table__name"><span>Лапша</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<span class="table__elipse"></span>
+						<p class="table__name"><span>Борщ (Средний)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+						<button class="table__img">
+							<img src="img/Trash.svg" alt="">
+						</button>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Фри (Средний / Соус карри)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Бургер (Большой / Острый)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Том ям (Не острый)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="table__item">
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name">Имя: <span>Амир</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">4</p>
+						<div class="table__img">
+							<img src="img/table.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<div class="table__img">
+							<img src="img/eye.svg" alt="">
+						</div>
+						<span class="table__elipse"></span>
+						<p class="table__name"><span>Лапша</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<span class="table__elipse"></span>
+						<p class="table__name"><span>Борщ (Средний)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+						<div class="table__img">
+							<img src="img/Trash.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Фри (Средний / Соус карри)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Бургер (Большой / Острый)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Том ям (Не острый)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="table__item">
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name">Имя: <span>Дастан</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">4</p>
+						<div class="table__img">
+							<img src="img/table.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<div class="table__img">
+							<img src="img/eye.svg" alt="">
+						</div>
+						<span class="table__elipse"></span>
+						<p class="table__name"><span>Лапша</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<span class="table__elipse"></span>
+						<p class="table__name"><span>Борщ (Средний)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+						<div class="table__img">
+							<img src="img/Trash.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Фри (Средний / Соус карри)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Бургер (Большой / Острый)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="table__wrap">
+					<div class="table__block">
+						<p class="table__name"><span>Том ям (Не острый)</span></p>
+					</div>
+					<div class="table__block">
+						<p class="table__point">1<span>x</span></p>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+		<div class="table__btn">
+			<div class="btn--golist modal__stoplist">Stop list</div>
+			<div class="btn--golist modal__golist">Go list</div>
+			<div class="btn btn--modalbuy modal__close-bill">Закрыть счет</div>
+		</div>
+	</section>
+
+	<div class="modal" id="modal__golist">
+		<button class="close modal__close" type="button"></button>
+		<div class="modal__cart">
+			<div class="modal__content golist__modal">
+				<div class="modal__info">
+					<div class="modal__cart_title">
+						<p>Go list</p>
+					</div>
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal__stoplist">
+		<button class="close modal__close" type="button"></button>
+		<div class="modal__cart">
+			<div class="modal__content golist__modal">
+				<div class="modal__info">
+					<div class="modal__cart_title">
+						<p>Stop list</p>
+					</div>
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+					<div class="golist__item">
+						<div class="golist__img">
+							<img src="img/home-item.jpg" alt="">
+						</div>
+						<div class="golist__text">
+							<p>Сэндвич с яичницой</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal__close-bill">
+		<button class="close modal__close" type="button"></button>
+		<div class="modal__carte">
+			<div class="modal__content">
+				<div class="modal__info">
+					<div class="modal__carte_title">
+						<p>Счет</p>
+					</div>
+					<div class="bill__list">
+						<div class="bill__item">
+							<div class="bill__item_title">Суши</div>
+							<div class="bill__item_number">х<span>2</span></div>
+							<div class="bill__item_price">1000 ₸</div>
+						</div>
+				
+						<div class="bill__item">
+							<div class="bill__item_title">Бургер</div>
+							<div class="bill__item_number">х<span>1</span></div>
+							<div class="bill__item_price">1290 ₸</div>
+						</div>
+				
+						<div class="bill__item">
+							<div class="bill__item_title">Сэндвич с яичницой</div>
+							<div class="bill__item_number">х<span>1</span></div>
+							<div class="bill__item_price">1230 ₸</div>
+						</div>
+				
+						<div class="bill__item">
+							<div class="bill__item_title">Салат Цезарь</div>
+							<div class="bill__item_number">х<span>2</span></div>
+							<div class="bill__item_price">1290 ₸</div>
+						</div>
+				
+						<div class="bill__item">
+							<div class="bill__item_title">Торт</div>
+							<div class="bill__item_number">х<span>1</span></div>
+							<div class="bill__item_price">1390 ₸</div>
+						</div>
+				
+						<hr>
+				
+						<div class="bill__item">
+							<div class="bill__item_title">ИТОГО</div>
+							<div></div>
+							<div class="bill__item_price">6000 ₸</div>
+						</div>
+				
+					</div>
+				</div>
+	
+				<div class="modal__btn">
+					<div class="btn btn--modalbuy">Оплачено</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--exit" id="modal__finish">
+		<div class="modal__exit_content">
+			<p class="modal__exit_title">Вы точно хотите выйти?</p>
+			<div class="modal__exit_button">
+				<button class="close btn btn--exityes" type="button">Нет</button>
+				<button class="btn btn--exit" type="button">Да</button>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Sign in</title>
+	<meta name="description" content="#">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="#">
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+	<script src="js/app.min.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/jquery.maskedinput.min.js"></script>
+
+</head>
+
+<body>
+
+	<section class="sign">
+		<div class="container sign__container">
+			<p class="sign__title">Добро пожаловать!</p>
+			<p class="sign__subtitle">Авторизируйтесь для входа <br>
+				в приложение</p>
+
+			<script type="text/javascript">jQuery(function($){$("#formPhone").mask("+7 999 999 99 99");});</script>
+
+			<form action="#" class="form" method="POST">
+				<div class="form__item">
+					<label for="formPhone" class="form__label">Введите номер телефона</label>
+					<input id="formPhone" type="tel" name="phone" placeholder="+7 999 999 99 99" class="form__input _req">
+				</div>
+
+				<p class="sign__text">
+					Продолжая, я соглашаюсь с условиями 
+					<a href="#">Пользовательского соглашения</a> и <a href="#">Политикой 
+						конфиденциальности</a> и даю согласие на обработку 
+					моих персональных данных в соответствии с (null)
+				</p>
+
+				<div class="form__btn">
+					<button type="submit" class="btn btn--form btn--disable" name="submit">Далее</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+</body>
+</html>
